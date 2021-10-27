@@ -1,5 +1,6 @@
 import random
 
+
 name = input("Enter your name: ")
 question = input("What would you ask?\n")
 answer = ""
