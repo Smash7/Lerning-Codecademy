@@ -6,30 +6,30 @@ bomb_mass = 1
 
 # Write your code below:
 # 1
-def f_to_c(f_temp):
+def f_to_c(f_temp: float) -> float:
     c_temp = (f_temp - 32) * 5 / 9
     return c_temp
 
 
 # 3
-def c_to_f(c_temp):
+def c_to_f(c_temp: float) -> float:
     f_temp = c_temp * (9 / 5) + 32
     return f_temp
 
 
 # 5
-def get_force(mass, acceleration):
+def get_force(mass: float, acceleration: float) -> float:
     return mass * acceleration
 
 
 # 8
-def get_energy(mass):
+def get_energy(mass) -> float:
     c = 3*10**8
     return mass ** c
 
 
 # 11
-def get_work(mass, acceleration, distance):
+def get_work(mass: float, acceleration: float, distance: float) -> float:
     return get_force(mass, acceleration) * distance
 
 
