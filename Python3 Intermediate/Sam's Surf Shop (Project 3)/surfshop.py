@@ -2,7 +2,8 @@ import datetime
 
 
 class TooManyBoardsError(Exception):
-    pass
+    def __str__(self):
+        raise 'Cart cannot have more than 4 surfboards in it!'
 
 
 class CheckoutDateError(Exception):
@@ -30,4 +31,5 @@ class ShoppingCart:
             self.checkout_date = date
 
     def apply_locals_discount(self):
-        pass
+        self.locals_discount = True
+        return self.locals_discount
