@@ -69,7 +69,7 @@ for guest in guest_list:
   print(guest)
 
 # task 4
-over_21 = (adult for adult in guests if guests[i] >= 21)
+over_21 = (adlult for adlult in guests if guests[adlult] >= 21)
 
 for guest in over_21:
   print(guest + ' is over 21')
